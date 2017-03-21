@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Parallax-Demo</title>
+  </head>
+  <body>
+    <section ng-controller="CloudController" style="position:absolute;">
+      <div ng-parallax pattern="cloudCtrl.pattern" speed="-1" style="position:absolute; z-index:1;">&nbsp</div>
+      <div ng-parallax pattern="cloudCtrl.pattern" speed="0" style="position:absolute; z-index:2;">&nbsp</div>
+      <div ng-parallax pattern="cloudCtrl.pattern" speed="1" style="position:absolute; z-index:3;">&nbsp</div>
+      <div ng-parallax pattern="cloudCtrl.pattern" speed=".5" style="position:absolute; z-index:3;">&nbsp</div>
+    </section>
+  </body>
+</html>
